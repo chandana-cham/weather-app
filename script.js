@@ -1,4 +1,4 @@
-const apikey = "ebdc056c748a5b51c5fada4441526735"; // Replace with your actual API key!
+const apikey = "YOUR_API"; // Replace with your actual API key!
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
@@ -119,3 +119,4 @@ form.addEventListener("submit", (e) => {
     getWeatherByLocation(city);
   }
 });
+
