@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- Animated weather backgrounds -->
+    <div class="rain" id="rainAnim" style="display: none"></div>
+    <div class="sun-glow" id="sunGlowAnim" style="display: none"></div>
+
+    <!-- Frosted Glass Card -->
+    <div class="glass-card">
+      <h1>Weather App</h1>
+      <form id="form">
+        <div class="input-group">
+          <span class="input-icon">&#128205;</span>
+          <input
+            type="text"
+            id="search"
+            placeholder="Type a location..."
+            autocomplete="off"
+          />
+          <button type="submit">Search</button>
+        </div>
+      </form>
+      <div id="loader" style="display: none">
+        <div class="spinner"></div>
+      </div>
+      <main id="main"></main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
